@@ -23,6 +23,11 @@
     - preload banner
   -->
   <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -54,39 +59,7 @@
         <a href="#" class="logo">
           <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
         </a>
-        <div class="search-container">
-          <div class="search-bar">
-            <div id="select">
-              <p id="selectText">All Categories</p>
-              <i class="bi bi-arrow-down arrow-down-icon"></i>
-              <ul id="dropdown-list">
-                <li class="options">All Categories</li>
-                <li class="options">Electronics</li>
-                <li class="options">Furniture</li>
-                <li class="options">Sports</li>
-                <li class="options">Fashion</li>
-                <li class="options">Jewelry</li>
-                <li class="options">Literature</li>
-                <li class="options">Community</li>
-                <li class="options">Pets</li>
-                <!-- <li class="options">Vehicles</li> -->
-              </ul>
-            </div>
-            <input type="text" id="inputfield" placeholder="I'm looking for...">
-            <hr class="splitter">
-            <div class="location-container">
-              <input type="text" id="locationfield" placeholder="Enter location...">
-              <ul class="location-suggestions">
-                <li class="suggestion">Brisbane, Australia</li>
-                <li class="suggestion">Sydney, Australia</li>
-                <li class="suggestion">Melbourne, Australia</li>
-                <li class="suggestion">Perth, Australia</li>
-       
-              </ul>
-            </div>
-            <i class="bi bi-search icon-search" id="search-icon"></i>
-          </div>
-        </div>
+
         <ul class="navbar-list">
           <li>
             <a href="#" class="nav-action-btn">Buy on Salepost</a>
@@ -118,16 +91,35 @@
           </li>
           <!-- New Buttons -->
           <li>
-            <button class="nav-action-btn login-btn">
+            <button class="nav-action-btn post-ad-btn">
 
-              Log In
+              Post a Free Ad
             </button>
           </li>
           <li>
-            <button class="nav-action-btn post-ad-btn">
+            <button class="nav-action-btn register-btn">
 
-              Sign Up
+              Register
             </button>
+          </li>
+          <li>
+            <div class="nav-action-btn login-btn">
+              <i class="bi bi-person-circle"></i>
+              My Salepost
+            
+              <!-- Dropdown content -->
+              <div class="dropdown-content">
+                <p class="dropdown-description"><span class="dropdown-span">Welcome to My Salepost</span>. Sign in or</p>
+                <p class="dropdown-description-2">Register to:</p>
+                <p class="dropdown-description-3">   <i class="bi bi-check-lg"></i>Post and manage your ads</p>
+                <p class="dropdown-description-4">   <i class="bi bi-check-lg"></i>Post and manage your ads</p>
+                <p class="dropdown-description-5"> <i class="bi bi-check-lg"></i>Post and manage your ads</p>
+                <div class="dropdown-buttons">
+                  <button class="login-btn-2">Sign In</button>
+                  <button class="register-btn-2">Register</button>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -150,77 +142,75 @@
 
         </video>
         <div class="container-4">
-          <div class="vertical-line">
+          <!-- <div class="vertical-line">
             <div class="vertical-line-icon"><i class="bi bi-cloud-plus"></i>
             </div>
-        </div>
+        </div> -->
           <h2 class="h1 hero-title">
-            <strong>Buy and Sell on Salepost</strong>
+            <strong>Australian Marketplace</strong>
           </h2>
-      
-          <button class="main-btn">
+
+          <div class="search-container">
+            <div class="search-bar">
+              <div id="select">
+                <i class="bi bi-filter-left filter-select-icon"></i>
+                <p id="selectText">All Categories</p>
+                <i class="bi bi-caret-down-fill arrow-down-icon"></i>
+                <ul id="dropdown-list">
+                  <li class="options">All Categories</li>
+                  <li class="options">Electronics</li>
+                  <li class="options">Furniture</li>
+                  <li class="options">Sports</li>
+                  <li class="options">Fashion</li>
+                  <li class="options">Jewelry</li>
+                  <li class="options">Literature</li>
+                  <li class="options">Community</li>
+                  <li class="options">Pets</li>
+                  <!-- <li class="options">Vehicles</li> -->
+                </ul>
+              </div>
+
+              <input type="text" id="inputfield" placeholder="I'm looking for...">
+              <hr class="splitter">
+              <div class="location-container">
+                <i class="bi bi-map"></i>
+                <input type="text" id="locationfield" placeholder="Brisbane, Australia">
+                <ul class="location-suggestions">
+                  <li class="suggestion">Brisbane, Australia</li>
+                  <li class="suggestion">Sydney, Australia</li>
+                  <li class="suggestion">Melbourne, Australia</li>
+                  <li class="suggestion">Perth, Australia</li>
+
+                </ul>
+
+              </div>
+
+              <i class="bi bi-search icon-search" id="search-icon"></i>
+            </div>
+          </div>
+
+          <!-- <button class="main-btn">
 
             Post a Free Ad
-          </button>
-          <p class="hero-text">
+          </button> -->
+          <!-- <p class="hero-text">
             Lorem ipsum, dolor sit amet consectetur adipisicing 
           </p>
           <p class="hero-text-2">
             Lorem ipsum dolor
-          </p>
+          </p> -->
         </div>
       </section>
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="section cta">
-        <div class="container">
-
-          <ul class="cta-list">
-
-            <li>
-              <div class="cta-card" style="background-image: url('./assets/images/cta-1.jpg')">
-                <p class="card-subtitle">Leather Shoes</p>
-
-                <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
-
-                <a href="#" class="btn-2 btn-link">
-                  <span>Shop Now</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </li>
-
-            <li>
-              <div class="cta-card" style="background-image: url('./assets/images/cta-2.jpg')">
-                <p class="card-subtitle">Sports Shoes</p>
-
-                <h3 class="h2 card-title">Makes Yourself Keep Sporty</h3>
-
-                <a href="#" class="btn-2 btn-link">
-                  <span>Shop Now</span>
-
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-     
-
-
 
 
     
+
+
+
+
+
+
+
 
 
       <!-- <section class="section special">
@@ -578,176 +568,162 @@
 
       <section class="section product">
         <div class="container">
-
-          <h2 class="h2 section-title">New and Hot Ads</h2>
-
-          <!-- <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn  active">All</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Nike</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Adidas</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Puma</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Bata</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Apex</button>
-            </li>
-
-          </ul> -->
+          <h2 class="h2 section-title">Local Market Sale</h2>
           <br>
-      
 
-          <div class="card-container">
-            <!-- Product Card 1 -->
-            <div class="product-card-2">
+          <!-- Swiper Slider Container -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <!-- Product Card 1 -->
+              <div class="swiper-slide product-card-2">
                 <img src="assets/images/shop/05.webp" alt="Product 1" class="product-image">
                 <div class="card-badge">New</div>
-                <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
                 <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
                 <div class="product-content">
-     
-                    <div class="product-name">Product 1</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card-2">
-              <img src="assets/images/other/02.png" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-              <div class="product-content">
                   <div class="product-name">Product 1</div>
                   <div class="product-description">Lorem ipsum dolor sit</div>
                   <div class="button-container">
-                      <button class="button get-coupon">Get Coupon Code</button>
-                      <button class="button buy-now">Buy Now</button>
-                  </div>
-              </div>
-          </div>
-          <div class="product-card-2">
-            <img src="assets/images/shop/03.webp" alt="Product 1" class="product-image">
-            <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-            <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-            <div class="card-badge">-25%</div>
-            <div class="product-content">
-                <div class="product-name">Product 1</div>
-                <div class="product-description">Lorem ipsum dolor sit</div>
-                <div class="button-container">
                     <button class="button get-coupon">Get Coupon Code</button>
                     <button class="button buy-now">Buy Now</button>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="product-card-2">
-          <img src="./assets/images/shop/10.webp" alt="Product 1" class="product-image">
-          <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-          <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-          <div class="product-content">
-              <div class="product-name">Product 1</div>
-              <div class="product-description">Lorem ipsum dolor sit</div>
-              <div class="button-container">
-                  <button class="button get-coupon">Get Coupon Code</button>
-                  <button class="button buy-now">Buy Now</button>
               </div>
-          </div>
-      </div>
-      <div class="product-card-2">
-        <img src="./assets/images/product-1.jpg" alt="Product 1" class="product-image">
-        <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-        <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-        <div class="product-content">
-            <div class="product-name">Product 1</div>
-            <div class="product-description">Lorem ipsum dolor sit</div>
-            <div class="button-container">
-                <button class="button get-coupon">Get Coupon Code</button>
-                <button class="button buy-now">Buy Now</button>
-            </div>
-        </div>
-    </div>
-            <!-- Product Card 2 -->
-            <div class="product-card-2">
-              <img src="./assets/images/other/01.png" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-                <div class="product-content">
-                    <div class="product-name">Product 2</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 3 -->
-            <div class="product-card-2">
-              <img src="./assets/images/shop/02.webp" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-              <div class="card-badge">New</div>
-                <div class="product-content">
-                    <div class="product-name">Product 3</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 4 -->
-            <div class="product-card-2">
-              <img src="./assets/images/shop/07.webp" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-              <div class="card-badge">-25%</div>
-                <div class="product-content">
-                    <div class="product-name">Product 4</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        
-          
-        </div>
 
-        
-            <div class="column-pagination">
-              <div class="pagination">
-                <a class="pagination-button" href="#">previous</a>
-                <a class="number-pagination" href="#">1</a>
-                <a class="number-pagination" href="#">2</a>
-                <a class="number-pagination" href="#">3</a>
-                <a class="number-pagination" href="#">4</a>
-                <a class="number-pagination" href="#">5</a>
-                <a class="number-pagination" href="#">6</a>
-                <a class="pagination-button" href="#">next</a>
+              <!-- Repeat the Product Cards for each product -->
+              <!-- Product Card 2 -->
+              <div class="swiper-slide product-card-2">
+                <img src="assets/images/other/02.png" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
               </div>
+
+              <!-- Repeat for all other product cards (up to 6 or more) -->
+              <!-- Product Card 3 -->
+              <div class="swiper-slide product-card-2">
+                <img src="assets/images/shop/03.webp" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div class="swiper-slide product-card-2">
+                <img src="./assets/images/shop/10.webp" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 5 -->
+              <div class="swiper-slide product-card-2">
+                <img src="./assets/images/product-1.jpg" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 6 -->
+              <div class="swiper-slide product-card-2">
+                <img src="./assets/images/other/01.png" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation Arrows -->
+
+          </div>
+        </div>
+      </section>
+
+   <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <ul class="cta-list">
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/cta-1.jpg')">
+                <h3 class="h2 card-title">    Buyers   </h3>
+
+                <p class="card-subtitle">   Start checking off your list with these amazing offers!</p> 
+
+              
+
+                <a href="#" class="btn-2">
+                  Start Buying 
+
+                  <!-- <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon> -->
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/cta-2.jpg')">
+                <h3 class="h2 card-title">    Sellers   </h3>
+
+                <p class="card-subtitle">   Start checking off your list with these amazing offers!</p>
+
+                <a href="#" class="btn-2">
+                  Start Selling 
+
+                  <!-- <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon> -->
+                </a>
+              </div>
+            </li>
 
           </ul>
 
         </div>
-
       </section>
+
+
 
       <!-- 
         - #SPECIAL
@@ -1040,178 +1016,117 @@
 
       <section class="section product-2">
         <div class="container">
-
-          <h2 class="h2 section-title">Trending Deals</h2>
-
-          <!-- <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn  active">All</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Nike</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Adidas</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Puma</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Bata</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Apex</button>
-            </li>
-
-          </ul> -->
+          <h2 class="h2 section-title">Trending Sale</h2>
           <br>
-      
 
-          <div class="card-container">
-            <!-- Product Card 1 -->
-            <div class="product-card-2">
+          <!-- Swiper Slider Container -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <!-- Product Card 1 -->
+              <div class="swiper-slide product-card-2">
                 <img src="assets/images/shop/05.webp" alt="Product 1" class="product-image">
                 <div class="card-badge">New</div>
-                <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
                 <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
                 <div class="product-content">
-     
-                    <div class="product-name">Product 1</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card-2">
-              <img src="assets/images/other/02.png" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-              <div class="product-content">
                   <div class="product-name">Product 1</div>
                   <div class="product-description">Lorem ipsum dolor sit</div>
                   <div class="button-container">
-                      <button class="button get-coupon">Get Coupon Code</button>
-                      <button class="button buy-now">Buy Now</button>
-                  </div>
-              </div>
-          </div>
-          <div class="product-card-2">
-            <img src="assets/images/shop/03.webp" alt="Product 1" class="product-image">
-            <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-            <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-            <div class="card-badge">-25%</div>
-            <div class="product-content">
-                <div class="product-name">Product 1</div>
-                <div class="product-description">Lorem ipsum dolor sit</div>
-                <div class="button-container">
                     <button class="button get-coupon">Get Coupon Code</button>
                     <button class="button buy-now">Buy Now</button>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="product-card-2">
-          <img src="./assets/images/shop/10.webp" alt="Product 1" class="product-image">
-          <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-          <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-          <div class="product-content">
-              <div class="product-name">Product 1</div>
-              <div class="product-description">Lorem ipsum dolor sit</div>
-              <div class="button-container">
-                  <button class="button get-coupon">Get Coupon Code</button>
-                  <button class="button buy-now">Buy Now</button>
               </div>
+
+              <!-- Repeat the Product Cards for each product -->
+              <!-- Product Card 2 -->
+              <div class="swiper-slide product-card-2">
+                <img src="assets/images/other/02.png" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Repeat for all other product cards (up to 6 or more) -->
+              <!-- Product Card 3 -->
+              <div class="swiper-slide product-card-2">
+                <img src="assets/images/shop/03.webp" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div class="swiper-slide product-card-2">
+                <img src="./assets/images/shop/10.webp" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 5 -->
+              <div class="swiper-slide product-card-2">
+                <img src="./assets/images/product-1.jpg" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Card 6 -->
+              <div class="swiper-slide product-card-2">
+                <img src="./assets/images/other/01.png" alt="Product 1" class="product-image">
+                <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                <div class="product-content">
+                  <div class="product-name">Product 1</div>
+                  <div class="product-description">Lorem ipsum dolor sit</div>
+                  <div class="button-container">
+                    <button class="button get-coupon">Get Coupon Code</button>
+                    <button class="button buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation Arrows -->
+
           </div>
-      </div>
-      <div class="product-card-2">
-        <img src="./assets/images/product-1.jpg" alt="Product 1" class="product-image">
-        <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-        <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-        <div class="product-content">
-            <div class="product-name">Product 1</div>
-            <div class="product-description">Lorem ipsum dolor sit</div>
-            <div class="button-container">
-                <button class="button get-coupon">Get Coupon Code</button>
-                <button class="button buy-now">Buy Now</button>
-            </div>
         </div>
-    </div>
-            <!-- Product Card 2 -->
-            <div class="product-card-2">
-              <img src="./assets/images/other/01.png" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-       
-                <div class="product-content">
-                    <div class="product-name">Product 2</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 3 -->
-            <div class="product-card-2">
-              <img src="./assets/images/shop/02.webp" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-              <div class="card-badge">New</div>
-                <div class="product-content">
-                    <div class="product-name">Product 3</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 4 -->
-            <div class="product-card-2">
-              <img src="./assets/images/shop/07.webp" alt="Product 1" class="product-image">
-              <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
-              <div class="card-badge">-25%</div>
-                <div class="product-content">
-                    <div class="product-name">Product 4</div>
-                    <div class="product-description">Lorem ipsum dolor sit</div>
-                    <div class="button-container">
-                        <button class="button get-coupon">Get Coupon Code</button>
-                        <button class="button buy-now">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        
-          
-        </div>
-
-        
-            <div class="column-pagination">
-              <div class="pagination">
-                <a class="pagination-button" href="#">previous</a>
-                <a class="number-pagination" href="#">1</a>
-                <a class="number-pagination" href="#">2</a>
-                <a class="number-pagination" href="#">3</a>
-                <a class="number-pagination" href="#">4</a>
-                <a class="number-pagination" href="#">5</a>
-                <a class="number-pagination" href="#">6</a>
-                <a class="pagination-button" href="#">next</a>
-              </div>
-            </div>
-
-          </ul>
-
-        </div>
-
       </section>
- 
+
 
 
       <!-- 
@@ -1219,55 +1134,55 @@
       -->
 
 
-      <section class="section product-2">
+      <section class="section product-3">
         <div class="container">
 
           <h2 class="h2 section-title">Featured Categories</h2>
 
           <br>
           <div class="card-container">
- 
+
             <div class="custom-card">
               <div class="custom-card-overlay">
-           
+
               </div>
               <div class="custom-card-text">
-              <h2>Clothes</h2>
-              <p class="custom-card-p-1">92,100 ads</p>
+                <h2>Clothes</h2>
+                <p class="custom-card-p-1">92,100 ads</p>
+              </div>
             </div>
-          </div>
-          <div class="custom-card">
-            <div class="custom-card-overlay">
-      
-            </div>
-            <div class="custom-card-text">
-              <h2>Electronics</h2>
-              <p class="custom-card-p-2">32,500 ads</p>
-            </div>
-        </div>
-        <div class="custom-card">
-          <div class="custom-card-overlay">
- 
-          </div>
-          <div class="custom-card-text">
-            <h2>Cars</h2>
-            <p class="custom-card-p-3">50,000 ads</p>
-          </div>
-      </div>
-      <div class="custom-card">
-        <div class="custom-card-overlay">
- 
-        </div>
-        <div class="custom-card-text">
-          <h2>Pets</h2>
-          <p class="custom-card-p-4">3,300 ads</p>
-        </div>
-    </div>
-          
-        </div>
+            <div class="custom-card">
+              <div class="custom-card-overlay">
 
-        
-       
+              </div>
+              <div class="custom-card-text">
+                <h2>Electronics</h2>
+                <p class="custom-card-p-2">32,500 ads</p>
+              </div>
+            </div>
+            <div class="custom-card">
+              <div class="custom-card-overlay">
+
+              </div>
+              <div class="custom-card-text">
+                <h2>Cars</h2>
+                <p class="custom-card-p-3">50,000 ads</p>
+              </div>
+            </div>
+            <div class="custom-card">
+              <div class="custom-card-overlay">
+
+              </div>
+              <div class="custom-card-text">
+                <h2>Pets</h2>
+                <p class="custom-card-p-4">3,300 ads</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
 
           </ul>
 
@@ -1283,22 +1198,38 @@
       <div class="banner-container">
 
         <div class="banner">
-            <div class="shoe">
-                <img src="assets/images/shoe.png" alt="">
-            </div>
-            <div class="content">
-                <span>upto</span>
-                <h3>50% 0ff</h3>
-                <p>offer ends after 5 days</p>
-                <a href="#" class="btn-offer">view offer</a>
-            </div>
-            <div class="women">
-                <img src="assets/images/women.png" alt="">
-            </div>
+          <div class="shoe">
+            <img src="assets/images/offer.png" alt="">
+          </div>
+          <div class="women">
+            <img src="assets/images/percent.png" alt="">
+          </div>
+          <div class="content">
+            <!-- <span>upto</span>
+            <h3>50% 0ff</h3>
+            <p>offer ends after 5 days</p> -->
+            <a href="#" class="btn-offer">view offer</a>
+          </div>
+      
         </div>
-    
-    </div>
 
+      </div>
+
+      <section class="newsletter-section">
+        <div class="container-7">
+         <div class="news-letter-wrapper"> 
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" />
+            <button type="submit" class="newsletter-button">Subscribe</button>
+            <div class="newsletter-text-container">
+              <span class="newsletter-text-2">Subscribe to get the best deals right in you email</span>
+              <img src="assets/images/email.png" alt="Email" class="newsletter-image" />
+            </div>
+          </form>
+        </div>
+        </div>
+
+      </section>
 
     </article>
   </main>
@@ -1357,32 +1288,68 @@
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Contact Us</p>
+              <p class="footer-list-title">Salepost</p>
             </li>
 
             <li>
               <address class="footer-link">
-                <ion-icon name="location"></ion-icon>
+                <!-- <ion-icon name="location"></ion-icon> -->
 
                 <span class="footer-link-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                  About Us
                 </span>
               </address>
             </li>
 
             <li>
-              <a href="tel:+557343673257" class="footer-link">
-                <ion-icon name="call"></ion-icon>
+              <address class="footer-link">
+                <!-- <ion-icon name="location"></ion-icon> -->
 
-                <span class="footer-link-text">+557343673257</span>
+                <span class="footer-link-text">
+                 Privacy Policies
+                </span>
+              </address>
               </a>
             </li>
 
             <li>
-              <a href="mailto:footcap@help.com" class="footer-link">
-                <ion-icon name="mail"></ion-icon>
+              <address class="footer-link">
+                <!-- <ion-icon name="location"></ion-icon> -->
 
-                <span class="footer-link-text">salepost@help.com</span>
+                <span class="footer-link-text">
+                 Terms of Use
+                </span>
+              </address>
+              </a>
+            </li>
+            <li>
+              <address class="footer-link">
+                <!-- <ion-icon name="location"></ion-icon> -->
+
+                <span class="footer-link-text">
+                  Contact Us
+                </span>
+              </address>
+              </a>
+            </li>
+            <li>
+              <address class="footer-link">
+                <!-- <ion-icon name="location"></ion-icon> -->
+
+                <span class="footer-link-text">
+                  FAQs
+                </span>
+              </address>
+              </a>
+            </li>
+            <li>
+              <address class="footer-link">
+                <!-- <ion-icon name="location"></ion-icon> -->
+
+                <span class="footer-link-text">
+                  Sitemap
+                </span>
+              </address>
               </a>
             </li>
 
@@ -1391,86 +1358,57 @@
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Company</p>
+              <p class="footer-list-title">Buy on Salepost</p>
             </li>
 
             <li>
               <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
 
-                <span class="footer-link-text">About Us</span>
+                <span class="footer-link-text">Active Deals</span>
               </a>
             </li>
 
             <li>
               <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
 
-                <span class="footer-link-text">Help Center</span>
+                <span class="footer-link-text">Diverse Categories</span>
               </a>
             </li>
 
             <li>
               <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <!-- <ion-icon name="chevron-forward-outline"></ion-icon> -->
 
-                <span class="footer-link-text">FAQs</span>
+                <span class="footer-link-text">Active Sellers</span>
               </a>
             </li>
 
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
+           
 
-                <span class="footer-link-text">Terms of Service</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                <span class="footer-link-text">New Products</span>
-              </a>
-            </li>
+          
 
           </ul>
 
           <div class="footer-list">
 
-            <p class="footer-list-title">Lorem Ipsum Dolor</p>
+            <p class="footer-list-title">Sell on Salepost</p>
 
             <table class="footer-table">
               <tbody>
 
                 <tr class="table-row">
-                  <th class="table-head" scope="row">Lorem Ipsum</th>
-
-                  <td class="table-data">Lorem Ipsum</td>
+                  
+                  <th class="table-head" scope="row">Join Salepost
+ </th>
+ 
                 </tr>
 
                 <tr class="table-row">
-                  <th class="table-head" scope="row">Lorem Ipsum</th>
+                  <th class="table-head" scope="row">Code of conduct</th>
 
-                  <td class="table-data">Lorem Ipsum</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Lorem Ipsum</th>
-
-                  <td class="table-data">Lorem Ipsum</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Lorem Ipsum</th>
-
-                  <td class="table-data">Lorem Ipsum</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Lorem Ipsum</th>
-
-                  <td class="table-data">Lorem Ipsum</td>
+          
                 </tr>
 
               </tbody>
@@ -1486,10 +1424,10 @@
               Authoritatively morph 24/7 potentialities with error-free partnerships.
             </p>
 
-            <form action="" class="newsletter-form">
-              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
-
-              <button type="submit" class="btn btn-primary">Subscribe</button>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Email" class="newsletter-input" />
+              <button type="submit" class="newsletter-button-2">Subscribe</button>
+        
             </form>
 
           </div>
@@ -1532,6 +1470,92 @@
   -->
 
   <script>
+
+document.querySelector('.login-btn').addEventListener('click', function(e) {
+  e.stopPropagation(); // Prevent click event from bubbling up to the document
+  var dropdownContent = this.querySelector('.dropdown-content');
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', function(e) {
+  var dropdown = document.querySelector('.login-btn');
+  var dropdownContent = dropdown.querySelector('.dropdown-content');
+  if (!dropdown.contains(e.target)) {
+    dropdownContent.style.display = 'none';
+  }
+});
+
+    var style = document.createElement('style');
+    style.innerHTML = `
+ 
+  @media (max-width: 767px) {
+    .swiper-slide {
+      flex: 0 0 calc((100% / 2) - 10px); 
+      margin-right: 10px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .swiper-slide {
+      flex: 0 0 calc((100% / 3) - 15px);  /
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .swiper-slide {
+      flex: 0 0 calc((100% / 4) - 15px);  
+    }
+  }
+
+ 
+  .swiper-pagination {
+    margin-top: 30px;  
+    text-align: center;
+    position: relative;
+    width: 100%;  
+    bottom: 0;
+  }
+
+ 
+  .swiper-pagination-bullet {
+    background-color: black; 
+    opacity: 0.3;  
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1; 
+    background-color: black; 
+  }
+ 
+  .swiper-container {
+    padding-bottom: 40px; /* Space for pagination dots */
+  }
+`;
+    document.head.appendChild(style);
+
+    // Initialize Swiper
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+    });
+
     document.addEventListener('DOMContentLoaded', function () {
       const cookiePopup = document.getElementById('cookiePopup');
       const cookieConsent = localStorage.getItem('cookieConsent');
@@ -1586,23 +1610,22 @@
       window.location.href = "#";
     };
 
-    document.getElementById('locationfield').addEventListener('focus', function() {
-  document.querySelector('.location-suggestions').classList.add('open');
-});
+    document.getElementById('locationfield').addEventListener('focus', function () {
+      document.querySelector('.location-suggestions').classList.add('open');
+    });
 
-document.getElementById('locationfield').addEventListener('blur', function() {
-  setTimeout(function() { // Delay closing to allow click on suggestions
-    document.querySelector('.location-suggestions').classList.remove('open');
-  }, 200);
-});
+    document.getElementById('locationfield').addEventListener('blur', function () {
+      setTimeout(function () { // Delay closing to allow click on suggestions
+        document.querySelector('.location-suggestions').classList.remove('open');
+      }, 200);
+    });
 
-document.querySelectorAll('.location-suggestions li').forEach(function(item) {
-  item.addEventListener('click', function() {
-    document.getElementById('locationfield').value = this.textContent;
-    document.querySelector('.location-suggestions').classList.remove('open');
-  });
-});
-
+    document.querySelectorAll('.location-suggestions li').forEach(function (item) {
+      item.addEventListener('click', function () {
+        document.getElementById('locationfield').value = this.textContent;
+        document.querySelector('.location-suggestions').classList.remove('open');
+      });
+    });
   </script>
 
   <script src="./assets/js/script.js"></script>
@@ -1610,6 +1633,7 @@ document.querySelectorAll('.location-suggestions li').forEach(function(item) {
   <!-- 
     - ionicon link
   -->
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
